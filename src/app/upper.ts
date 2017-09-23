@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer, HostListener, HostBinding, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, Renderer, HostListener} from '@angular/core';
 
 @Directive({
   selector: '[upper1]'
@@ -13,7 +13,7 @@ export class UpperDirective {
 
 
   // To Listen to Events that are triggered by client
-  @HostListener('mouseenter')
+  @HostListener('mouseout')
   foo() {
 
   this.e.nativeElement.innerHTML = this.e.nativeElement.innerHTML.toUpperCase();

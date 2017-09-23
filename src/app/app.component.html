@@ -1,7 +1,9 @@
-<h3 [style.color]="value">Changed color from child component is {{value}}
-    <h3>
-        <child-app (colorChange)="getValue($event)">
+<div class="container-fluid">
+    <h3 [style.color]="value">Changed color from child component is {{value}}
+        <h3>
+            <child-app (colorChange)="getValue($event)">
 
-        </child-app>
+            </child-app>
+        </h3>
     </h3>
-</h3>
+</div>

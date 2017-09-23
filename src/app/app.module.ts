@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { childComponent } from './childComponent';
+import { ChildComponent } from './childComponent';
 import { UpperDirective } from './upper';
 import { VisibilityDirective } from './myvisibility';
 import { MycolorDirective } from './mycolor';
@@ -11,7 +10,7 @@ import { MycolorDirective } from './mycolor';
 @NgModule({
   declarations: [
     AppComponent,
-    childComponent,
+    ChildComponent,
     UpperDirective,
     VisibilityDirective,
     MycolorDirective

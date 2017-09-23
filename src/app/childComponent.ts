@@ -5,23 +5,24 @@ import { Component, Output, OnInit, EventEmitter} from '@angular/core';
   templateUrl: './child.component.html',
   styleUrls: ['./app.component.css']
 })
-export class childComponent implements OnInit {
+export class ChildComponent implements OnInit {
 
   value = '';
   instructions: string[] = ['mouseenter to show uppercase',
-   'double click to hide or show', 'click just to send color to parent'];
+                             'double click to hide or show',
+                           'click just to send color to parent'];
 
   @Output() colorChange = new EventEmitter<string>();
   names: string[];
 
-constructor() {
+  constructor() {
               this.names = ['Sravy', 'Raja', 'Padmavathi'];
 
   }
- getColor(el): void{
-   this.value = el.style.color;
-   this.colorChange.emit(this.value);
- }
+   getColor(el): void{
+     this.value = el.style.color;
+     this.colorChange.emit(this.value);
+   }
 
 
 
