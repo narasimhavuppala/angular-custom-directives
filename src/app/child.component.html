@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li *ngFor="let item of instructions">{{item}}</li>
+    </ul>
+
+    <ul>
+        <li class="cl" *ngFor="let name of names" upper1 mycolor visibility (click)="getColor(myli)" #myli>{{name}}</li><br>
+    </ul>
+</div>

@@ -1,0 +1,7 @@
+<h3 [style.color]="value">Changed color from child component is {{value}}
+    <h3>
+        <child-app (colorChange)="getValue($event)">
+
+        </child-app>
+    </h3>
+</h3>
